@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<Nullable>enable</Nullable>
+	<UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<PackageId>dev.HelloWRC.$(AssemblyName)</PackageId>
+	<Authors>JIzilin</Authors>
+	<AssemblyVersion>1.1.7.0</AssemblyVersion>
+	<FileVersion>1.1.7.0</FileVersion>
+	<Version>1.1.7.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<None Remove="Assets\Fonts\HarmonyOS_Sans_SC_Black.ttf" />
+	<None Remove="Assets\Fonts\MiSans-Bold.ttf" />
+	<None Remove="Assets\Fonts\MiSans-Light.ttf" />
+	<None Remove="Assets\Fonts\MiSans-Medium.ttf" />
+	<None Remove="Assets\Fonts\MiSans-Regular.ttf" />
+	<None Remove="Assets\Fonts\MiSans-Thin.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+	<PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+	<PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+	<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+	<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <None Remove="Assets\Fonts\HarmonyOS_Sans_SC_Black.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\MiSans-Bold.ttf" />
+    <Resource Include="Assets\Fonts\MiSans-Light.ttf" />
+    <Resource Include="Assets\Fonts\MiSans-Medium.ttf" />
+    <Resource Include="Assets\Fonts\MiSans-Regular.ttf" />
+    <Resource Include="Assets\Fonts\MiSans-Thin.ttf" />
+  </ItemGroup>
+
+</Project>
